@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bizhacks.clothsorter.MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="User"
+        android:id="@+id/ourApp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Gender"
+        android:id="@+id/gender"
+        android:layout_below="@+id/ourApp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genderText"
+        android:layout_alignBottom="@+id/gender"
+        android:layout_toRightOf="@+id/gender"
+        android:layout_toEndOf="@+id/gender" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Measurements"
+        android:id="@+id/measurements"
+        android:layout_below="@+id/genderText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/measurementsBust"
+        android:layout_below="@+id/measurements"
+        android:layout_alignLeft="@+id/measurementsWaist"
+        android:layout_alignStart="@+id/measurementsWaist" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/measurementsWaist"
+        android:layout_below="@+id/measurementsBust"
+        android:layout_toRightOf="@+id/measurements"
+        android:layout_toEndOf="@+id/measurements" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/measurementsHip"
+        android:layout_below="@+id/measurementsWaist"
+        android:layout_alignLeft="@+id/measurementsWaist"
+        android:layout_alignStart="@+id/measurementsWaist" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/measurementsHeight"
+        android:layout_below="@+id/measurementsHip"
+        android:layout_alignLeft="@+id/measurementsHip"
+        android:layout_alignStart="@+id/measurementsHip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Type"
+        android:id="@+id/type"
+        android:layout_below="@+id/measurementsHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Style"
+        android:id="@+id/style"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/type"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/style"
+        android:layout_toRightOf="@+id/style"
+        android:layout_alignRight="@+id/ourApp"
+        android:layout_alignEnd="@+id/ourApp" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/type"
+        android:layout_toRightOf="@+id/type"
+        android:layout_alignRight="@+id/ourApp"
+        android:layout_alignEnd="@+id/ourApp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="bust"
+        android:id="@+id/textBust"
+        android:layout_above="@+id/measurementsWaist"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="waist"
+        android:id="@+id/textWaist"
+        android:layout_alignBottom="@+id/measurementsWaist"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="hip"
+        android:id="@+id/textHip"
+        android:layout_above="@+id/measurementsHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="height"
+        android:id="@+id/textHeight"
+        android:layout_alignBottom="@+id/measurementsHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_message"
+        android:hint="Enter A Message."
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Next"
+        android:id="@+id/buttonNext"
+        android:layout_gravity="center_vertical"
+        android:onClick="sendMessage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="54dp" />
+
+</RelativeLayout>
+

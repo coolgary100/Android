@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SizUp</string>
+    <string name="action_settings">Settings</string>
+    <string name="Style">Style</string>
+    <string-array name="style_types">
+
+        <item>Sports</item>
+        <item>Formal</item>
+        <item>Casual</item>
+        <item>Comfort</item>
+    </string-array>
+    <string name="Type">Type</string>
+    <string-array name="type_types">
+
+        <item>Shirt</item>
+        <item>Pant</item>
+        <item>Jacket</item>
+        <item>Shoes</item>
+        <item>Lingerie</item>
+    </string-array>
+    <string name="edit_message">Enter A Message</string>
+    <string name="Next">Check Out</string>
+    <string name="title_activity_display_message">SizUp</string>
+    <string name="title_activity_display_message1">SizUp</string>
+</resources>
