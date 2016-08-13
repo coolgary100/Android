@@ -1,6 +1,4 @@
 # BizHacks2.0
 # Android
-
-
-
-I like big dicks =P
+325456
+355561561516
